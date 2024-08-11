@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,19 @@
     <title>My First Portfolio</title>
 </head>
 <body>
+    {% include "portfolio/includes/navbar.html" %}
     <section class="about">
-        <p>This is me</p>
+        <p>This is about</p>
     </section>
+    <section class="experience">
+        <p>This is experience</p>
+    </section>
+    <section class="projects">
+        <p>This is projects</p>
+    </section>
+    <section class="contact">
+        <p>This is contact</p>
+    </section>
+    {% include "portfolio/includes/footer.html" %}
 </body>
 </html>
