@@ -38,6 +38,7 @@
 .navlink{
     text-decoration: none;
     color: black;
+    transition: text-decoration 0.5s, color 0.5s; 
 }
 .navlink:hover{
     color: grey;

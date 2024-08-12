@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "portfolio/css/aboutstyles.css" %}">
     <link rel="stylesheet" href="{% static "portfolio/css/cssreset.css" %}">
     <link rel="stylesheet" href="{% static "portfolio/css/navstyle.css" %}">
     <title>My First Portfolio</title>
@@ -11,21 +12,24 @@
 <body class="font">
         {% include "portfolio/includes/navbar.html" %}
         <section class="about">
-            <img src="" alt="About Me Page">
-            <div>
-                <p>Hello I'm</p>
-                <p>Reece De Padua</p>
-                <p>Frontend Developer</p>
-                <div>
-                    <button>Download CV</button>
-                    <button>Contact Info</button>
+            <header class="aboutcontent">
+                <img src="{% static "portfolio/images/me.jpg" %}" alt="About Me Page" class="aboutimg">
+                <div class="aboutcontentcontainer">
+                    <div class="aboutrightcontent">
+                        <p class="abouttxtcenter abouttxt">Hello I'm</p>
+                        <p class="abouttxtcenter abouttxtname">Reece De Padua</p>
+                        <p class="abouttxtcenter abouttxtocc">Frontend Developer</p>
+                        <div class="aboutothrcenter aboutbuttoncontainer">
+                            <button class="aboutbutton aboutcv">Download CV</button>
+                            <button class="aboutbutton aboutcontact">Contact Info</button>
+                        </div>
+                        <div class="aboutothrcenter aboutlinks">
+                            <a href=""><img src="{% static "portfolio/images/linkedin.png" %}" alt="LinkedIn Link" class="aboutlink"></a>
+                            <a href=""><img src="{% static "portfolio/images/github.png" %}" alt="Git-Hub Link" class="aboutlink"></a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="LinkedIn Link">
-                    <img src="" alt="Git-Hub Link">
-                </div>
-                
-            </div>
+            </header>     
         </section>
         <section class="experience">
             <p>This is experience</p>
