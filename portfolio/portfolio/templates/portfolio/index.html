@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="{% static "portfolio/css/aboutstyles.css" %}">
     <link rel="stylesheet" href="{% static "portfolio/css/cssreset.css" %}">
     <link rel="stylesheet" href="{% static "portfolio/css/navstyle.css" %}">
+    <link rel="stylesheet" href="{% static "portfolio/css/experiencestyles.css" %}">
     <title>My First Portfolio</title>
 </head>
 <body class="font">
+        <!-- Navbar -->
         {% include "portfolio/includes/navbar.html" %}
+        <!-- About Section -->
         <section class="about">
             <header class="aboutcontent">
                 <img src="{% static "portfolio/images/me1.jpg" %}" alt="About Me Page" class="aboutimg">
@@ -31,39 +34,46 @@
                 </div>
             </header>     
         </section>
+        <!-- Experience Section -->
         <section class="experience">
             <div class="experiencehead">
-                <p class="experiencetxt1">Get To Know More</p>
-                <p class="experiencetxt2">About Me</p>
+                <p class="experiencetxt experiencetxt1">Get To Know More</p>
+                <p class="experiencetxt experiencetxt2">About Me</p>
             </div>
             <div class="experiencecontainer">
-                <img src="" alt="Picture of Reece">
-                <div class="experiencecontent">
-                    <div class="experienceachieve">
-                        <div>
-                            <img src="" alt="Award Icon">
-                            <h2>Experience</h2>
-                            <p>2 + years</p>
-                            <p>Frontend Development</p>
+                <img src="{% static "portfolio/images/me1.jpg" %}" alt="Picture of Reece" class="experienceimg">
+                <div class="experiencecontentcontain">
+                    <div class="experiencecontent">
+                        <div class="experienceachieve">
+                            <div class="experienceexp">
+                                <img src="" alt="Award Icon">
+                                <h2>Experience</h2>
+                                <p>2 + years</p>
+                                <p>Frontend Development</p>
+                            </div>
+                            <div class="experienceeduc">
+                                <img src="" alt="People Icon">
+                                <h2>Education</h2>
+                                <p>Ongoing: Undergraduate Degree in B.S. in Information Technology</p>
+                            </div>
                         </div>
-                        <div>
-                            <img src="" alt="People Icon">
-                            <h2>Education</h2>
-                            <p>Ongoing: Undergraduate Degree in B.S. in Information Technology</p>
-                        </div>
+                        <textarea class="experiencetxtarea">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor a quas sed nisi molestiae delectus eligendi, non blanditiis nemo accusantium, temporibus odit neque minima laboriosam cupiditate obcaecati maiores nulla!
+                        </textarea>
                     </div>
-                    <textarea class="experiencetxtarea">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor a quas sed nisi molestiae delectus eligendi, non blanditiis nemo accusantium, temporibus odit neque minima laboriosam cupiditate obcaecati maiores nulla!
-                    </textarea>
                 </div>
+                    
             </div>
         </section>
+        <!-- Projects Section -->
         <section class="projects">
             <p>This is projects</p>
         </section>
+        <!-- Contact Section -->
         <section class="contact">
             <p>This is contact</p>
         </section>
+        <!-- Footer Section -->
         {% include "portfolio/includes/footer.html" %}
 </body>
 </html>

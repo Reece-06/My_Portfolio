@@ -1,9 +1,10 @@
-.about{
-    
+.about{  
     height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /* Each section takes up full viewport height */
+    border: 1px solid black;
 }
 .aboutimg{
     align-self: center;
@@ -17,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     width: 45%;
-    margin-bottom: 10%;
+   
 }
 .abouttxtcenter{
     text-align: center;
