@@ -1,0 +1,46 @@
+.navcontainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 15%;
+}
+.navoptions{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-right: 10%;
+    align-self: center;
+}
+.navspace{
+    margin-right: 3rem;
+}
+
+#navnospace{
+    margin-right: 0;
+    
+}
+.navtext{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.navname{
+    margin-left: 10%;
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+.navnamelink{
+    text-decoration: none;
+    color: black;
+}
+.navlink{
+    text-decoration: none;
+    color: black;
+}
+.navlink:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}

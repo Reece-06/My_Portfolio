@@ -1,25 +1,41 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "portfolio/css/cssreset.css" %}">
+    <link rel="stylesheet" href="{% static "portfolio/css/navstyle.css" %}">
     <title>My First Portfolio</title>
 </head>
-<body>
-    {% include "portfolio/includes/navbar.html" %}
-    <section class="about">
-        <p>This is about</p>
-    </section>
-    <section class="experience">
-        <p>This is experience</p>
-    </section>
-    <section class="projects">
-        <p>This is projects</p>
-    </section>
-    <section class="contact">
-        <p>This is contact</p>
-    </section>
-    {% include "portfolio/includes/footer.html" %}
+<body class="font">
+        {% include "portfolio/includes/navbar.html" %}
+        <section class="about">
+            <img src="" alt="About Me Page">
+            <div>
+                <p>Hello I'm</p>
+                <p>Reece De Padua</p>
+                <p>Frontend Developer</p>
+                <div>
+                    <button>Download CV</button>
+                    <button>Contact Info</button>
+                </div>
+                <div>
+                    <img src="" alt="LinkedIn Link">
+                    <img src="" alt="Git-Hub Link">
+                </div>
+                
+            </div>
+        </section>
+        <section class="experience">
+            <p>This is experience</p>
+        </section>
+        <section class="projects">
+            <p>This is projects</p>
+        </section>
+        <section class="contact">
+            <p>This is contact</p>
+        </section>
+        {% include "portfolio/includes/footer.html" %}
 </body>
 </html>
