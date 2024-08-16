@@ -3,7 +3,7 @@
     width: 100%;
 }
 .experiencehead{
-    border: 1px solid black;
+   
     width: fit-content;
     margin: 0 auto;
     display: flex;
@@ -28,47 +28,73 @@
 }
 .experiencecontainer{
     display: flex;
-    flex-flow: row wrap;
-    width: 60%;
-    height: 50%;
-    justify-content: space-between;
-    border: 1px solid black;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    gap: 4rem;
+   
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 5rem;
     
 }
-.experiencecontent{
-    border: 1px solid black;
+.experiencecontent {
+   
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    height: 60%;
+    gap: 2rem;
+    width: 100%; /* Take full width of the parent container */
+    max-width: 772px; /* Optional: cap the maximum width */
+    height: auto; /* Allow height to grow based on content */
 }
 .experiencecontentcontain{
-    border: 1px solid black;
+   
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .experienceexp, .experienceeduc{
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 1.5px solid black;
+    border-radius: 40px;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 4rem 0;
-    width: 15rem;
+    padding: 1rem 0;
+    width: 23rem;
+    gap: 1rem;
+}
 
-}
-.experienceexp{
-    margin-right: 1rem;
-}
-.experienceeduc{
-    margin-left: 1rem;
-}
 .experienceachieve{
     display: flex;
     flex-flow: row wrap;
+    gap: 2rem;
+    height: fit-content;
+   
+    width: fit-content;
+    
+}
+.experinceicons{
+    width: 2rem;
+    height: 2rem;
+}
+.experienceh2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.experiencep{
+    color: grey;
+    font-size: 1rem;
+   
+    text-align: center;
+}
+
+.experienceeductxt{
+    min-width: 80%;
+}
+.experiencetxtarea {
+   
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%; /* Take full width of the parent container */
+    height: auto; /* Allow height to grow based on content */
 }
