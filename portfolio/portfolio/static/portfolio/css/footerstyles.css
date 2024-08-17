@@ -1,5 +1,30 @@
+
 .footer{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    gap: 4rem;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 13%;    
+    align-items: center;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.footer li{
+    font-size: 1.5rem;
+}
+.footerlink{
+    text-decoration: none;
+    color: black;
+    transition: text-decoration 0.5s, color 0.5s; 
+}
+.footerlink:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }

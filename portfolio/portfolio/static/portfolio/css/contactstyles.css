@@ -1,6 +1,9 @@
 .contact{
     height: 100vh;
     width: 100%;
+    
+    
+    
 }
 .contacthead{
     width: fit-content;
@@ -8,7 +11,8 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 30vh;
+    
 }
 .contacttxt1{
     margin-bottom: 1.5rem;
@@ -30,7 +34,6 @@
     margin-top: 4rem;
 }
 .contactdetail{
-  
     display: flex;
     gap: 0.5rem;
 }

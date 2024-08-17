@@ -225,28 +225,31 @@
         </section>
         <!-- Contact Section -->
         <section class="contact">
-            <div class="contacthead">
-                <p class="contacttxt contacttxt1">Get In Touch</p>
-                <p class="contacttxt contacttxt2">Contact Me</p>
-            </div>
-            <div class="contactdetails">
-                <div class="contactdetail">
-                    
-                    <img src="{% static "portfolio/images/email.png" %}" alt="Email">
-                    <a href="">    
-                        <p>reecedepada@gmail.com</p>
-                    </a>
+            
+                <div class="contacthead">
+                    <p class="contacttxt contacttxt1">Get In Touch</p>
+                    <p class="contacttxt contacttxt2">Contact Me</p>
                 </div>
-                <div class="contactdetail">
-                    
-                    <img src="{% static "portfolio/images/email.png" %}" alt="LinkedIn">
-                    <a href="">
-                        <p>LinkedIn</p>
-                    </a>
+                <div class="contactdetails">
+                    <div class="contactdetail">
+                        
+                        <img src="{% static "portfolio/images/email.png" %}" alt="Email">
+                        <a href="">    
+                            <p>reecedepada@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="contactdetail">
+                        
+                        <img src="{% static "portfolio/images/email.png" %}" alt="LinkedIn">
+                        <a href="">
+                            <p>LinkedIn</p>
+                        </a>
+                    </div>
                 </div>
-            </div>
+            
+            <!-- Footer Section -->
+            {% include "portfolio/includes/footer.html" %}
         </section>
-        <!-- Footer Section -->
-        {% include "portfolio/includes/footer.html" %}
+        
 </body>
 </html>
