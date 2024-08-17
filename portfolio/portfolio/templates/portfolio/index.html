@@ -4,74 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "portfolio/css/introstyles.css" %}">
     <link rel="stylesheet" href="{% static "portfolio/css/aboutstyles.css" %}">
     <link rel="stylesheet" href="{% static "portfolio/css/cssreset.css" %}">
     <link rel="stylesheet" href="{% static "portfolio/css/navstyle.css" %}">
     <link rel="stylesheet" href="{% static "portfolio/css/experiencestyles.css" %}">
+    <link rel="stylesheet" href="{% static "portfolio/css/projectsstyles.css" %}">
     <title>My First Portfolio</title>
 </head>
 <body class="font">
         <!-- Navbar -->
         {% include "portfolio/includes/navbar.html" %}
-        <!-- About Section -->
-        <section class="about">
-            <header class="aboutcontent">
-                <img src="{% static "portfolio/images/me1.jpg" %}" alt="About Me Page" class="aboutimg">
-                <div class="aboutcontentcontainer">
-                    <div class="aboutrightcontent">
-                        <p class="abouttxtcenter abouttxt">Hello I'm</p>
-                        <p class="abouttxtcenter abouttxtname">Reece De Padua</p>
-                        <p class="abouttxtcenter abouttxtocc">Frontend Developer</p>
-                        <div class="aboutothrcenter aboutbuttoncontainer">
-                            <button class="aboutbutton aboutcv">Download CV</button>
-                            <button class="aboutbutton aboutcontact">Contact Info</button>
+        <!-- Intro Section -->
+        <section class="intro">
+            <header class="introcontent">
+                <img src="{% static "portfolio/images/me1.jpg" %}" alt="intro Me Page" class="introimg">
+                <div class="introcontentcontainer">
+                    <div class="introrightcontent">
+                        <p class="introtxtcenter introtxt">Hello I'm</p>
+                        <p class="introtxtcenter introtxtname">Reece De Padua</p>
+                        <p class="introtxtcenter introtxtocc">Frontend Developer</p>
+                        <div class="introothrcenter introbuttoncontainer">
+                            <button class="introbutton introcv">Download CV</button>
+                            <button class="introbutton introcontact">Contact Info</button>
                         </div>
-                        <div class="aboutothrcenter aboutlinks">
-                            <a href=""><img src="{% static "portfolio/images/linkedin.png" %}" alt="LinkedIn Link" class="aboutlink"></a>
-                            <a href=""><img src="{% static "portfolio/images/github.png" %}" alt="Git-Hub Link" class="aboutlink"></a>
+                        <div class="introothrcenter introlinks">
+                            <a href=""><img src="{% static "portfolio/images/linkedin.png" %}" alt="LinkedIn Link" class="introlink"></a>
+                            <a href=""><img src="{% static "portfolio/images/github.png" %}" alt="Git-Hub Link" class="introlink"></a>
                         </div>
                     </div>
                 </div>
             </header>     
         </section>
-        <!-- Experience Section -->
-        <section class="experience">
-            <div class="experiencehead">
-                <p class="experiencetxt experiencetxt1">Get To Know More</p>
-                <p class="experiencetxt experiencetxt2">About Me</p>
+        <!-- About Section -->
+        <section class="about">
+            <div class="abouthead">
+                <p class="abouttxt abouttxt1">Get To Know More</p>
+                <p class="abouttxt abouttxt2">About Me</p>
             </div>
-            <div class="experiencecontainer">
-                <img src="{% static "portfolio/images/me1.jpg" %}" alt="Picture of Reece" class="experienceimg">
-                <div class="experiencecontentcontain">
-                    <div class="experiencecontent">
-                        <div class="experienceachieve">
-                            <div class="experienceexp">
+            <div class="aboutcontainer">
+                <img src="{% static "portfolio/images/me1.jpg" %}" alt="Picture of Reece" class="aboutimg">
+                <div class="aboutcontentcontain">
+                    <div class="aboutcontent">
+                        <div class="aboutachieve">
+                            <div class="aboutexp">
                                 <img src="{% static "portfolio/images/medal.png" %}" alt="Award Icon" class="experinceicons ">
-                                <h2 class="experienceh2 ">Experience</h2>
-                                <p class="experiencep ">2 + years</p>
-                                <p class="experiencep">Frontend Development</p>
+                                <h2 class="abouth2 ">Experiance</h2>
+                                <p class="aboutp ">2 + years</p>
+                                <p class="aboutp">Frontend Development</p>
                             </div>
-                            <div class="experienceeduc">
+                            <div class="abouteduc">
                                 <img src="{% static "portfolio/images/graduatecap.png" %}" alt="People Icon" class="experinceicons ">
-                                <h2 class="experienceh2 ">Education</h2>
-                                <p class="experiencep experienceeductxt">Ongoing: B.S. in Information Technology</p>
+                                <h2 class="abouth2 ">Education</h2>
+                                <p class="aboutp abouteductxt">Ongoing: B.S. in Information Technology</p>
                             </div>
                         </div>
-                         <p class="experiencetxtarea">
+                         <p class="abouttxtarea">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae repellendus voluptate voluptas, perferendis culpa dolor ducimus accusamus recusandae aut dignissimos, sunt necessitatibus. Expedita ex, eum corporis perferendis eaque a quasi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae repellendus voluptate voluptas, perferendis culpa dolor ducimus accusamus recusandae aut dignissimos, sunt necessitatibus. Expedita ex, eum corporis perferendis eaque a quasi?
                         </p> 
                     </div>
-                </div>
-                    
+                </div>   
             </div>
         </section>
-        <!-- Projects Section -->
-        <section class="projects">
-            <p>This is projects</p>
+        <!-- Experience Section -->
+        <section class="experience">
+            <div class="experiencehead">
+                <p class="experiencetxt experiencetxt1">Explore My</p>
+                <p class="experiencetxt experiencetxt2">Experience</p>
+            </div>
+            <div class="experiencecontentcontain">
+                <div class="experiencefront">
+                    <h1 class="experiencefronttitle">Frontend Development</h1>
+                    <div class="experiencefrontcontents">
+                        <div class="experiencefrontcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>HTML</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="experiencefrontcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>CSS</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="experiencefrontcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>SASS</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="experiencefrontcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>JavaScript</h2>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+                        <div class="experiencefrontcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>React</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="experiencefrontcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>Python</h2>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+                        <div class="experiencefrontcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>Django</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="experienceback">
+                    <h1 class="experiencebacktitle">Backend Development</h1>
+                    <div class="experiencebackcontents">
+                        <div class="experiencebackcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>MySQL</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="experiencebackcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>MongoDB</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="experiencebackcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>SQLite</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="experiencebackcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>Git</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="experiencebackcontent">
+                            <img src="{% static "portfolio/images/checked.png" %}" alt="Check">
+                            <div>
+                                <h2>NodeJS</h2>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- Contact Section -->
+        <!-- Project Section -->
+        <section class="project">
+            <div class="projecthead">
+                <p class="projecttxt projecttxt1">Browse My Recent</p>
+                <p class="projecttxt projecttxt2">Projects</p>
+            </div>
+            <div class="projectcontentcontain">
+                <div class="projectindivcontain">
+                   
+                        <img src="{% static "portfolio/images/project-1.png" %}" alt="First Proj">
+                    
+                    <h1>Project One</h1>
+                    <div class="projectbuttons">
+                        <button class="projectbutton">
+                            GitHub
+                        </button>
+                        <button class="projectbutton">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="projectindivcontain">
+                    
+                        <img src="{% static "portfolio/images/project-2.png" %}" alt="Second Proj">
+                    
+                    <h1>Project Two</h1>
+                    <div class="projectbuttons">
+                        <button class="projectbutton">
+                            GitHub
+                        </button>
+                        <button class="projectbutton">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="projectindivcontain">
+                    
+                        <img src="{% static "portfolio/images/project-3.png" %}" alt="Third Proj">
+                   
+                    <h1>Project Three</h1>
+                    <div class="projectbuttons">
+                        <button class="projectbutton">
+                            GitHub
+                        </button>
+                        <button class="projectbutton">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="contact">
-            <p>This is contact</p>
+            <p>Hello</p>
         </section>
         <!-- Footer Section -->
         {% include "portfolio/includes/footer.html" %}

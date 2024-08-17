@@ -3,13 +3,12 @@
     width: 100%;
 }
 .experiencehead{
-   
     width: fit-content;
     margin: 0 auto;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .experiencetxt1{
     margin-bottom: 1.5rem;
@@ -19,82 +18,53 @@
     font-size: 3rem;
     font-weight: bold;
 }
-.experienceimg{
-    object-fit: cover;
-    width: 20rem;
-    height: 24rem;
-    border-radius: 20px;
-    align-self: center;
-}
-.experiencecontainer{
+.experiencecontentcontain{
     display: flex;
     flex-wrap: wrap;
-    width: fit-content;
-    height: fit-content;
-    gap: 4rem;
-   
-    margin: 0 auto;
-    margin-top: 5rem;
     
-}
-.experiencecontent {
-   
-    display: flex;
-    flex-flow: column wrap;
+    margin-top: 4rem;
     gap: 2rem;
-    width: 100%; /* Take full width of the parent container */
-    max-width: 772px; /* Optional: cap the maximum width */
-    height: auto; /* Allow height to grow based on content */
-}
-.experiencecontentcontain{
-   
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
-.experienceexp, .experienceeduc{
-    border: 1.5px solid black;
-    border-radius: 40px;
+.experiencefront, .experienceback{
+    border: 1px solid black;
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1rem 0;
-    width: 23rem;
-    gap: 1rem;
-}
-
-.experienceachieve{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2rem;
-    height: fit-content;
-   
-    width: fit-content;
+    gap: 2.5rem;
+    padding: 2rem 4rem;
+    width: 40%;
+    border-radius: 50px;
     
 }
-.experinceicons{
-    width: 2rem;
-    height: 2rem;
-}
-.experienceh2{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.experiencep{
-    color: grey;
-    font-size: 1rem;
-   
+.experiencefronttitle, .experiencebacktitle{
     text-align: center;
+    color: grey;
+}
+.experiencefrontcontents, .experiencebackcontents{
+    
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+.experiencefrontcontent, .experiencebackcontent{
+    
+    display: flex;
+    gap: 1.5rem; 
+    padding-left: 10%;
+    flex-grow: 1;
+    flex-basis: 40%;
 }
 
-.experienceeductxt{
-    min-width: 80%;
+.experiencefrontcontent:last-child, .experiencebackcontent:last-child{
+    justify-content: center;
+    padding-left: 0;
 }
-.experiencetxtarea {
-   
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    width: 100%; /* Take full width of the parent container */
-    height: auto; /* Allow height to grow based on content */
+.experiencefrontcontent img, .experiencebackcontent img{
+    width: 1.5rem;
+    height: 1.5rem;
 }
+.experiencefrontcontent p, .experiencebackcontent p{
+    font-weight: 300;
+}
+

@@ -1,0 +1,63 @@
+.project{
+    height: 100vh;
+    width: 100%;
+}
+.projecthead{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 4rem;
+}
+.projecttxt1{
+    margin-bottom: 1.5rem;
+    color:grey;
+}
+.projecttxt2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.projectcontentcontain{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 5rem;
+}
+.projectindivcontain{
+    padding: 1rem 2.5rem;
+    border: 1.5px solid grey;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.projectindivcontain img{
+    width: 20rem;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.projectbuttons{
+    display: flex;
+    gap: 1rem;
+   
+}
+.projectbutton{
+    width: 120px;
+    padding: 1rem 0;
+    background-color: white;
+    border-radius: 50px;
+    border: 1.4px solid grey;
+    font-weight: bold;
+    transition: background-color 1s, border-color 1s;
+}
+.projectbutton:hover{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border-color: rgb(47, 47, 47);
+}
